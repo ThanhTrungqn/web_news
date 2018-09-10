@@ -361,6 +361,27 @@ body {
       font-size: 18px;
       font-weight: 600;
     }
+    .title-news-medium{
+      font-size: 13px;
+      font-weight: 600;
+    }
+    .menu-image-medium{
+      display: none;
+    }
+}
+
+@media (max-width: 576px){
+    .bannerImg {
+        display: none;
+    } 
+    .title-news-big{
+      font-size: 15px;
+      font-weight: 600;
+    }
+    .title-news-medium{
+      font-size: 15px;
+      font-weight: 600;
+    }
 }
 /* CUSTOMIZE THE CAROUSEL SCROLL
 -------------------------------------------------- */
