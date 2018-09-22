@@ -3,6 +3,27 @@ body {
   margin-top:80px;
   width:100vw;
 }
+.nav-bg{
+}
+.is-hidden 
+{
+  opacity: 0;
+  -webkit-transform: translate(0,-60px);
+  -webkit-transition: -webkit-transform 1s,background 1s,color 1s,opacity 0 1s;
+}
+a:hover{
+  text-decoration: none;
+}
+.img-brand{
+  height:60px;
+  width:200px;
+}
+.is-visible 
+{
+  opacity: 1;
+  -webkit-transform: translate(0,0);
+  -webkit-transition: -webkit-transform 0.5s,background .5s,color .5s;
+}
 .carousel-control-prev-icon {
  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23888800' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -13,6 +34,16 @@ body {
 
 .carousel-control {
     width: 6%
+}
+.texte_1{
+    font-size: 35px;
+    font-weight: 500;
+    color:#fff;
+}
+.texte_2{
+    font-size: 20px;
+    font-weight: 300;
+    color:#fff;
 }
 .txt-news-h1 {
     font-size: 40px;
@@ -34,7 +65,9 @@ body {
     color: #fff;
     background-color: #ff5508;
 }
-
+.txt-red{
+  color:#ff0000;
+}
 /* Top left text */
 .txt-top-left {
     position: absolute;
@@ -110,11 +143,13 @@ body {
 .pd-left-10 {
   padding-left:10px;
 }
-
+.modal-custom {
+  background-image: linear-gradient(to right, #e9eadc, #e1dec2, #dcd1a9, #dac390, #dab478);
+}
 .col-tag {
   padding: 10px 25px;
   margin-bottom: 20px;
-  background-color: #333333;
+  background-image: linear-gradient(to right, #2b6bde, #b954c3, #f4478b, #ff664f, #e39516);
   color: #ffffff;
 }
 .row-1-line{
@@ -301,11 +336,11 @@ body {
     display: block;
     width: 80%;
     height: 3px;
-    background-color: #7952b3;
+    background-color: #E39516;
     margin-bottom: 20px;
     margin-bottom: 20px;
     margin: 10px auto;
-    opacity:0.2;
+    opacity:0.5;
 }
 
 .footer-line-divider:after {
@@ -313,7 +348,7 @@ body {
     display: block;
     width: 80px;
     height: 3px;
-    background-color: #0055ff;
+    background-color: #E39516;
     margin-bottom: 20px;
     margin-top: 10px;
     opacity:1;
@@ -324,7 +359,7 @@ body {
 /* TEXT HEADER
 -------------------------------------------------- */
 .container .text-header{
-    color: #7952b3;
+    color: #E39516;
     font-family: inherit;
     font-weight: 2000;
     font-size: 2.5rem;
@@ -428,7 +463,7 @@ body {
 
 /* Hero section*/
 .top_cont_outer {
-    background: #005490;
+    background-image: linear-gradient(to right, #2b6bde, #b954c3, #f4478b, #ff664f, #e39516);
     position: relative;
 }
 .hero_section {

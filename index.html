@@ -15,8 +15,8 @@
 	</head>
 	<!-- Header -->
 	<header>
-      <nav class="navbar navbar-expand-lg navbar-dark nav-default fixed-top bg-dark">
-        <a class="navbar-brand" href="index.html"><img src="img/logo-2.png" class="img-responsive" alt="Brand" width="150"/></a>
+      <nav class="navbar navbar-expand-xl navbar-dark nav-bg nav-default fixed-top bg-dark">
+        <a class="navbar-brand" href="index.html"><img src="img/logo-2.png" class="img-responsive img-brand" alt="Brand"/></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -37,24 +37,14 @@
             <li class="nav-item">
               <a class="nav-link" href="ve-may-bay.html">Vé máy bay</a>
             </li>
-              <li class="nav-item dropdown">
-			    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-			    <div class="dropdown-menu navbar-dark bg-dark">
-			      <a class="dropdown-item nav-link" href="#">Action</a>
-			      <a class="dropdown-item nav-link" href="#">Another action</a>
-			      <a class="dropdown-item nav-link" href="#">Something else here</a>
-		    	</div>
-		    </li>
             <li class="nav-item">
               <a class="nav-link" href="our-contact.html">Liên hệ</a>
             </li>
           </ul>
-          <ul class="navbar-nav mt-md-1">
-          	<li><a href="#"><i class="fab fa-facebook icon"></i></a>
-          		<a href="#"><i class="fab fa-linkedin icon"></i></a>
-          		<a href="#"><i class="fab fa-instagram icon"></i></a>
-          	</li>
-          </ul>
+          <form class="form-inline mt-2 mt-md-0">
+            <input class="form-control mr-sm-2 col-7" type="text" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0 col-2" type="submit"><i class="fas fa-search"></i></button>
+          </form>
         </div>
       </nav>
     </header>
@@ -68,9 +58,8 @@
 	        	<div class="row align-items-center">
 	          		<div class="col-12 col-lg-6 col-md-6 col-sm-8 mx-auto">
 	            		<div class="top_left_cont animatable bounceInLeft"> 
-	              			<h2 id="texte_1">Trang tin tức du lịch số 1 miền trung</h2>
-	              			<p id="texte_2">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.</p>
-	              			<a href="#service" class="read_more2">Read more</a> 
+	              			<h2 class="texte_1">Trang tin tức du lịch số 1 miền trung</h2>
+	              			<p class="texte_2">Hoàng Phúc Car, thương hiệu du lịch số 1 tại miền trung, Chúng tôi nhận cung cấp các tin tức du lịch mới và bổ ích nhất, Cho thuê xe du lịch, xe tự lái giá rẻ, Hỗ trợ các bạn trong việc tìm phòng khách sạn, tìm vé máy bay giá rẻ các chiều</p>
 	              		</div>
 	          		</div>
 	          		<div class="col-0 col-lg-6 col-md-6 col-sm-4 mx-auto animatable bounceInRight">
@@ -84,7 +73,6 @@
 	<!--Hero_Section-->
 	  
     <!-- /My first Carousel -->
-
     <!-- Start poster ----
 
     -->
@@ -612,7 +600,7 @@
 						<a href="#"><img class="img-responsive card-img-top" src="img/f1.jpg" alt=""></a>
 						<div class="block-title">
 							<a href="#">
-								<h3>A Discount Toner Cartridge Is Better Than Ever.</h3>
+								<h3 class="txt-white">A Discount Toner Cartridge Is Better Than Ever.</h3>
 							</a>
 							<span class="entry-meta-medium">
 								<i><a><span class="fas fa-calendar-alt icon-news"></span>03 April, 2018</a></i>
@@ -669,57 +657,46 @@
 	<footer class="footer">
 		<div class="container bottom_border">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 col-lg-4 col-6">
-					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Find us</h5>
+				<div class="col-6 col-sm-6 col-md-4 col-lg-4 order-1 order-sm-1">
+					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Cơ Sở 1</h5>
 					<!--headin5_amrc-->
-					<p class="mb10">Lorem Ipsum is simply dummy text of the since the 1500s</p>
-					<p><i class="fa fa-location-arrow"></i> 9878/25 sec 9 rohini 35 </p>
-					<p><i class="fa fa-phone"></i>  +91-9999878398  </p>
-					<p><i class="fa fa-phone"></i>  +91-9999878398  </p>
-					<p><i class="fa fa fa-envelope"></i> info@example.com  </p>
+					<p class="mb10">Công Ty TNHH Hoàng Phúc xin kính chào quý khách</p>
+					<p><i class="fa fa-location-arrow"></i>  430 Nguyễn Văn Linh, P. Trương Quang Trọng, TP Quảng Ngãi</p>
+					<p><i class="fa fa-phone"></i>  0901 841 841  </p>
+					<p><i class="fa fa-phone"></i>  0898 841 841  </p>
+					<p><i class="fa fa-phone"></i>  0976 167 867  </p>
+					<p><i class="fa fa fa-envelope"></i>  travelhoangphuc@gmail.com</p>
 				</div>
-				<div class="col-sm-6 col-md-3 col-lg-3 col-6">
-					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Our Service</h5>
+				<div class="col-12 col-sm-12 col-xs-12 col-md-4 col-lg-4 order-3 order-sm-2">
+					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Dịch vụ</h5>
 					<!--headin5_amrc-->
-					<ul class="footer_ul_amrc">
-						<li><a href="#">data</a></li>
-						<li><a href="#">Trainning</a></li>
-						<li><a href="#">Thiet ke web</a></li>
-						<li><a href="#">Thiet ke phan mem</a></li>
-						<li><a href="#">Hair Masking/Clipping</a></li>
-						<li><a href="#">Image Cropping</a></li>
-					</ul>
-				<!--footer_ul_amrc ends here-->
+					<p><i class="fas fa-car"></i>     Thuê Xe du lịch</p>
+					<p><i class="fas fa-car"></i>     Thuê Xe tự lái</p>
+					<p><i class="fas fa-car"></i>     Thuê xe cưới hỏi</p>
+					<p><i class="fas fa-car"></i>     Thuê xe khám bệnh</p>
+					<p><i class="fas fa-car"></i>     Thuê xe hợp đồng</p>
+					<p><i class="fas fa-plane-departure"></i>   Thuê xe Đưa đón sân bay</p>
+					<p><i class="fas fa-plane-departure"></i>   Đặt vé máy bay giá rẻ</p>
+					<p><i class="fa fa-phone"></i>    Đặt vé du lịch lý sơn, hội an</p>
 				</div>
-				<div class="col-sm-12 col-md-5 col-lg-5 col-12">
-					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Contact us</h5>
-					<div class="col_white_amrc">
-						<div>
-							<label for="exampleFormControlTextarea1">Example textarea</label>
-							<input type="text" class="form-control" placeholder="Your Name">
-						</div>
-						<div class="form-padding">
-							<label for="exampleFormControlTextarea1">Example textarea</label>
-							<input type="text" class="form-control" placeholder="Your Email">
-						</div>
-						<div>
-							<label for="exampleFormControlTextarea1">Example textarea</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Your Message"></textarea>
-						</div>
-						<div class="form-padding mx-auto">
-							<button type="button" class="btn btn-secondary">Submit</button>
-						</div>
-					</div>
-					<!--footer_ul_amrc ends here-->
+				<div class="col-6 col-sm-6 col-md-4 col-lg-4 order-2 order-sm-3">
+					<h5 class="headin5_amrc col_white_amrc pt2 footer-line-divider">Cơ Sở 2</h5>
+					<!--headin5_amrc-->
+					<p class="mb10">Công Ty TNHH Hoàng Phúc xin kính chào quý khách</p>
+					<p><i class="fa fa-location-arrow"></i>  476A Trưng Nữ Vương, P. Hòa Thuận Đông, Quận Hải Châu, TP Đà Nẵng</p>
+					<p><i class="fa fa-phone"></i>  0901 841 841  </p>
+					<p><i class="fa fa-phone"></i>  0898 841 841  </p>
+					<p><i class="fa fa-phone"></i>  0976 167 867  </p>
+					<p><i class="fa fa fa-envelope"></i>  travelhoangphuc@gmail.com</p>
 				</div>
 			</div>
 		</div>
 		<div class="container">
 			<div class="foote_bottom_ul_amrc">
-				<li><a href="#">Home</a></li>
-				<li><a href="#">About</a></li>
-				<li><a href="#">Services</a></li>
-				<li><a href="#">Contact</a></li>
+				<li><a href="#">Trang Chủ</a></li>
+				<li><a href="#">Du lịch</a></li>
+				<li><a href="#">Thuê Xe</a></li>
+				<li><a href="#">Liên hệ</a></li>
 			</div>
 			<!--foote_bottom_ul_amrc ends here-->
 			<p class="text-center">Copyright @2017 | Designed With by <a href="#">Your Company Name</a></p>

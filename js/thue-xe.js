@@ -111,3 +111,31 @@ var index_2 = 0;
     this.innerHTML = srcTxt2[index_2];         // change text accordingly
   }).fadeIn(1000, animate_txt2);                   // then fadeIn. When fadeIn finishes, call animate again
 })();
+
+$(document).ready(function(){
+  $('#button_scrollable').on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+        window.location.hash = hash;
+      });
+    } 
+  });
+
+  var c, currentScrollTop = 0,
+  navbar = $('nav');
+  $(window).scroll(function () {
+    var a = $(window).scrollTop();
+    var b = navbar.height();
+    currentScrollTop = a;  
+    if (c < currentScrollTop && a > b + b) {
+      navbar.removeClass("is-visible").addClass("is-hidden");
+    } else if (c > currentScrollTop && !(a <= b)) {
+      navbar.removeClass("is-hidden").addClass("is-visible");
+    }
+    c = currentScrollTop;
+  });
+});
