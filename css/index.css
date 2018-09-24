@@ -1,7 +1,6 @@
 body {
   background-color:#eeeeee;
   margin-top:80px;
-  width:100vw;
 }
 .nav-bg{
 }
@@ -467,7 +466,7 @@ a:hover{
     position: relative;
 }
 .hero_section {
-    color:#bbbbbb;
+    color:#eeeeee;
     position: relative;
     padding-top: 50px;
 }
